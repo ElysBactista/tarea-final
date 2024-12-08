@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Agente - DIGESETT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Menú Agente</h2>
+        <button id="registerFineButton">Registrar Multa</button>
+        <button id="viewFinesButton">Listado de Multas</button> <!-- Nuevo botón -->
+        <button id="logoutButton">Cerrar Sesión</button>
+
+        <!-- Mensaje de éxito o error -->
+        <div id="message"></div>
+
+        <!-- Enlace a la página de registrar multa -->
+        <script>
+            document.getElementById('registerFineButton').addEventListener('click', function() {
+                window.location.href = 'registrar_multa.html';
+            });
+
+            document.getElementById('viewFinesButton').addEventListener('click', function() {
+                window.location.href = 'listado_multas.html'; // Navegar al listado de multas
+            });
+
+            document.getElementById('logoutButton').addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        </script>
+    </div>
+</body>
+</html>

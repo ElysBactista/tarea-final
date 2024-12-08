@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Administrativo - DIGESETT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Módulo Administrativo</h1>
+        <input type="text" id="adminUser" placeholder="Usuario" required>
+        <input type="password" id="adminPassword" placeholder="Clave" required>
+        <button id="adminLoginButton">Iniciar Sesión</button>
+
+        <div id="adminMenu" style="display:none;">
+            <h2>Gestión de Usuarios</h2>
+            <input type="text" id="newUser" placeholder="Nuevo Usuario">
+            <button id="addUserButton">Agregar Usuario</button>
+
+            <h2>Conceptos de Multas</h2>
+            <input type="text" id="newConcept" placeholder="Nuevo Concepto">
+            <button id="addConceptButton">Agregar Concepto</button>
+
+            <h3>Lista de Conceptos</h3>
+            <ul id="conceptList"></ul>
+
+            <button id="backButton">Volver al Menú</button>
+        </div>
+
+        <!-- Mensaje de error -->
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

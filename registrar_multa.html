@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Multa - DIGESETT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Multa</h2>
+        <input type="text" id="ciudadanoCedula" placeholder="Cédula Ciudadano" required>
+        <input type="text" id="nombreCiudadano" placeholder="Nombre Ciudadano" required>
+        <select id="concepto" required>
+            <option value="">Seleccionar Concepto</option>
+            <option value="Exceso de Velocidad">Exceso de Velocidad</option>
+            <option value="Estacionamiento Indebido">Estacionamiento Indebido</option>
+        </select>
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <input type="text" id="coordenadas" placeholder="Coordenadas (lat,long)" required>
+        <input type="file" id="foto">
+
+        <button id="saveFineButton">Guardar Multa</button>
+
+        <!-- Mensaje de éxito o error -->
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
